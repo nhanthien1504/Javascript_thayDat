@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function countspace(str){
+        // 11. Đếm có bao nhiêu khoảng trắng trong một chuỗi ?
+        //     VD : “ Hello  world”, output: 3
+
+        //     let dem  = 0;
+        //     for(let i = 0; i < str.length; i++){
+        //         if(str[i] === " "){
+        //             dem +=1
+        //         }
+        //     }
+        //     return dem
+        // }
+        // let str = 'hello world'
+        // console.log(countspace(str))
+
+        // 12. Hãy remove tất cả khoảng trắng, space và ‘enter’ trong một chuỗi
+        // VD: “    Hello world   ”, output: “Helloworld”
+        // let Str = window.prompt('nhap gia tri chuoi')
+        // let removespace = Str.split(' ').join('')
+        // console.log(removespace)
+
+
+
+        // 13. Hãy viết chương trình đảo ngược sau s.
+        //     VD: “This is a beautiful day”, output: ”yad lufituaeb a si sihT”
+
+        // let Str = window.prompt('nhap gia tri chuoi')
+        // let reverseStr = Str.split('').reverse().join('')
+        // console.log(reverseStr)
+
+
+        // 14. Nhập vào chuỗi s1 và s2, cho biết vị trí xuất hiện của chuỗi s2 trong s1.
+        //     VD: s1: “This is a beautiful day”, s2: “is” => output: 2
+        // let Str1 = 'This is a beautiful day'
+        // let Str2 = 'is'
+        // console.log(Str1.indexOf(Str2))
+
+        // 15. Viết chương trình chuẩn hóa họ tên.
+        //     VD: “NguyeN THI tho tHu hA”, output: “Nguyen Thi Tho Thu Ha”
+
+        // let hoTenstr = window.prompt('nhap ho va ten')
+        // arr = hoTenstr.split(' ')
+        // let temp, kq = ''
+        // let filterRe = arr.filter(x => x != '')
+        // for (let i = 0; i < filterRe.length; i++) {
+        //     temp = filterRe[i].trim().toLowerCase()         
+        //     if(temp !=""){
+        //         temp = temp.substr(0,1).toUpperCase() + temp.substr(1);
+        //         kq += temp + " "
+
+        //     }
+        // }
+        // console.log(kq)
+
+        // 16. Viết chương trình lấy  id name của fb.
+        //     VD: “https://www.facebook.com/ngothucdat”, output: “ngothucdat”
+
+        // let str = "https://www.facebook.com/ngothucdat"
+        // let result = ""
+        // for (let i = str.length; i > 0; i--) {
+        //     if (str[i] == "/") {
+        //         console.log(str.slice(i + 1, str.length))
+        //         break
+        //     }
+        // }
+
+        // 17.  Viết hàm số tính min, max của 3 số ?
+        //     VD : min(2, 4, 7) => output: 7
+
+        // function timMin(x,y,z){
+        //     if(x < y && x < z){
+        //         return x
+        //     }else if(y < x && y < z ){
+        //         return y
+        //     }else
+        //     return z
+        // }
+        // b = timMax(4,3,7)
+        // function timMax(x,y,z){
+        //     if(x > y && x > z){
+        //         return x
+        //     }else if(y > x && y > z ){
+        //         return y
+        //     }else
+        //     return z
+        // }
+        // b = timMin(4,3,7)
+        // c = timMax(4,3,7)
+        // console.log(b)
+        // console.log(c)
+
+        // 18. Viết hàm tìm vị trí xâu X tồn tại kề cuối trong xâu Y ?
+        //     VD1 : s1: “This is a beautiful day, is it ?”, s2: “is”
+        // findPosition(s2, s1) => 5
+        // VD2: s1: “This is a beautiful day, is it ?”, s2: “isa”
+        // findPosition(s2, s1) => -1
+        // VD2: s1: “hi hi hi hi hi”, s2: “hi”
+        // findPosition(s2, s1) => 9
+        //lastIndexOf()
+
+        let str1 = 'This is a beautiful day, is it ?'
+        let str2 = 'is'
+        console.log(findPosition(str1, str2))
+        function findPosition(str1, str2) {
+            let arr = str1.split(" ")
+            for (let i = arr.length; i > 0; i--) {
+                if(arr[i] == str2){
+                    return i
+                    break
+                }else{
+                    return 1
+                }
+            }
+            
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
