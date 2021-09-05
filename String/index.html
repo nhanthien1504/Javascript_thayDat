@@ -110,24 +110,49 @@
         // findPosition(s2, s1) => 9
         //lastIndexOf()
 
-        let str1 = 'This is a beautiful day, is it ?'
-        let str2 = 'is'
-        console.log(findPosition(str1, str2))
-        function findPosition(str1, str2) {
-            let arr = str1.split(" ")
-            for (let i = arr.length; i > 0; i--) {
-                if(arr[i] == str2){
-                    return i
-                    break
-                }else{
-                    return 1
-                }
-            }
-            
-        }
+        // let str1 = 'This is a beautiful day, is it ?'
+        // let str2 = 'is'
+        // console.log(findPosition(str1, str2))
+        // function findPosition(str1, str2) {
+        //     let arr = str1.split(" ")
+        //     for (let i = arr.length; i > 0; i--) {
+        //         if (arr[i] == str2) {
+        //             return i
+        //             break
+        //         } else {
+        //             return 1
+        //         }
+        //     }
+
+        // }
+
+        // 19.  Hãy tính tổng các số từ 1 đến n mà không dùng for, while loop ? (đệ quy, recursive)
+        // VD: total(9) => output: 45
+        // var tong_so = 0;
+        // function calculate(num) {
+        //     if (num > 0) {
+        //         tong_so += num;
+        //         return calculate(num - 1);
+        //     }
+        // }
+        // calculate(10)
+        // console.log(tong_so)
+
+        // 20.[Ignore] Viết 1 hàm chuẩn hóa so sánh của một string, 
+        //và trả về Xâu chuẩn.Xâu chuẩn là sâu không tồn tại các dấu cách(space) và tab and enter trong value(value là giá trị trong "{value}")
+        // VD: `computer =            " ngan 98    " AND class = "  REACTJS2002 "`
+        // Output: `computer = "ngan 98" AND class = "REACTJS2002"`
+        // function chuanHoachuoi(str) {
+        //     str = str.trim()
+        //     return str
+        // }
+        // let computer =            " ngan 98    "
+        // console.log(chuanHoachuoi(computer));
 
 
 
+
+        
 
     </script>
 </body>
